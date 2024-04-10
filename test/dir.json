@@ -1,0 +1,26 @@
+{
+  "test": "",
+  "children": [
+    {"text": "controller"},
+    {"text": "cmd"},
+    {"text": "conf"},
+    {"text": "dao"},
+    {
+      "text": "global",
+      "children": [
+        {"text": "constants"}
+      ]
+    },
+    {"text": "log"},
+    {"text": "middleware"},
+    {"text": "pojo"},
+    {"text": "router"},
+    {
+      "text": "service",
+      "children": [
+        {"text": "dto"}
+      ]
+    },
+    {"text": "utils"}
+  ]
+}

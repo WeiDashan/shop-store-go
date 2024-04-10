@@ -1,0 +1,32 @@
+mode:
+  develop: true
+server:
+  port: 8184
+db:
+  dsn: shop:shop@tcp(49.233.51.52:3306)/shop?charset=utf8mb4&parseTime=True&loc=Local
+  maxIdleConn: 10 # 最多空闲连接数
+  maxOpenConn: 100  #最多打开连接数
+redis:
+  host: 49.233.51.52
+  port: 6379
+  database: 1
+mail:
+  host: smtp.163.com
+  port: 25
+  username: weidashan7206@163.com
+  password: ERRZJXJYIHTOHDYD
+rabbitmq:
+  host: 49.233.51.52
+  port: 5672
+  username: admin
+  password: admin
+loginCode:
+  generateCodeExpire: 1 # 申请code的时间间隔(分钟)
+  codeExpire: 5 # 登录code的失效时间(分钟)
+jwt:
+  tokenExpire: 120 # token有效时长(分钟)
+  signingKey: weidashan # 签名使用的key
+log:
+  MaxSize: 1      # 日志文件最大的尺寸(M)，超限后开始自动分割
+  MaxBackups: 10  # 保留旧文件的最大个数
+  MaxAge: 28      # 保留旧文件的最大天数
